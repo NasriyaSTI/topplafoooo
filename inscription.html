@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inscription</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="titt3">inscription</h1>
+    <form action="valide.html" method="post">
+      <fieldset>
+        <legend>donnees de connection</legend>
+        <label for="m" class="col">Mail : </label>
+        <input type="email" name="mail" id="m" placeholder="user@exemple.com" required  /><br />
+        <label for="pw" class="col">password : </label>
+        <input type="password" name="hamd" id="pw" required minlength="3" />
+        <input type="button" value="Voir MP" />
+      </fieldset>
+      <fieldset>
+        <legend>Donne personnels</legend>
+        <label for="" class="col">Prenom :</label>
+        <input class="ty" type="text" name="prenom" />
+        <br />
+        <label for="" class="col" >Nom :</label>
+        <input class="ty" type="text" name="Nom" />
+        <br />
+        <label for="" class="col">Titre :</label>
+        <input type="radio" name="sexe" id="h" value="h" />
+        <label for="h">homme</label>
+        <input type="radio" name="sexe" id="f" value="f"/>
+        <label for="f">femme</label>
+        <br />
+        <label for="" class="col">logement :</label>
+        <input type="radio" name="logement" id="lo" checked value="Tunsian" />
+        <label for="lo">en Tunisie</label>
+        <input type="radio" name="logement" id="lo" value="etranger" />
+        <label for="lo">a letranger </label>
+        <br />
+        <label for="" class="col">date de naissance :</label>
+        <input type="date" name="date" id="" />
+        <br />
+        <label for="c" class="col"> code postale:</label>
+        <input type="number" name="cdpostale" id="c" min="1000" max="9999" />
+        <br />
+        <label for="v" class="col">Ville:</label>
+        <select name="ville" id="">
+          <option value="">Selectionner une ville</option>
+          <option value="1">Tunis</option>
+          <option value="2">Sousse</option>
+          <option value="3" selected>Sfax</option>
+          <option value="4">Gabes</option>
+        </select>
+        <br />
+        <label for="" class="col">Type de carte :</label>
+        <input type="checkbox" name="c1" id="cn" value="visa"/>
+        <label for="cn">Visa</label>
+        <input type="checkbox" name="c2" id="ms"value="mastercard" />
+        <label for="ms">Master card</label>
+        <br />
+        <label for="vr" class="col">vos Remarque :</label> <br />
+        <textarea name="hidd" id="vr" cols="30" rows="4"></textarea>
+      </fieldset>
+      <input class= "batoun"  type="submit" value="Envoyer" />
+      <input class= "batoun"  type="reset" value="Annuler" />
+    </form>
+  </body>
+</html>

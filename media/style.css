@@ -1,0 +1,24 @@
+h1{
+color: lightsalmon;
+text-align: center;
+font-size: xx-large;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight:bold;
+
+}
+h2{
+
+color: brown;
+font-style: italic;
+
+}
+mark{
+
+    background-color: antiquewhite;
+}
+*{
+    background-color: rgb(245, 98, 171);
+}
+.col{width: 150px;
+    display: inline-block;}
+nav{background-color: brown;}
